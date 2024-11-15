@@ -1,12 +1,16 @@
-<%@lists.each do |list|%>
-  <%= link_to list_path(list), class: "text-decoration-none" do %>
-    <div class="card">
-      <div class="card-body">
-        <%= list.name%>
+<div class="container text-center">
+<div class="row">
+  <%@lists.each do |list|%>
+    <%= link_to list_path(list), class: "text-decoration-none col-4 mb-2" do %>
+      <div class="card">
+        <div class="card-body">
+          <%= list.name%>
+        </div>
       </div>
-    </div>
-  <% end %>
-<%end%>
+    <% end %>
+  <%end%>
+</div>
+</div>
 <div>
-  <%= link_to "New", new_list_path, class: "btn btn-primary mt-3"%>
+  <%= link_to "New list", new_list_path, class: "btn btn-primary mt-3"%>
 </div>

@@ -10,12 +10,6 @@
           <p class="card-text">
             <%=movie.overview%>
           </p>
-          <%= link_to "Add to list" , new_bookmark_path, class: "btn btn-primary"%>
-        </div>
-        <div>
-          <% movie.bookmarks.each do |bookmark| %>
-          <p><%= bookmark.comment%></p>
-          <% end%>
         </div>
       </div>
     <%end%>
