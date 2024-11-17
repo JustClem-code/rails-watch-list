@@ -1,4 +1,10 @@
 <div class="container text-center">
+  <!-- app/views/articles/index.html.erb -->
+  <%= cl_image_tag("https://res.cloudinary.com/dzu1hugb0/image/upload/v1731865875/q7kmz4fufdw92zxbxfax.jpg",
+      width: 400, height: 300, crop: :fill) %>
+  <!-- for face detection -->
+  <%= cl_image_tag("https://res.cloudinary.com/dzu1hugb0/image/upload/v1731865875/q7kmz4fufdw92zxbxfax.jpg",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
   <div class="row justify-content-md-center">
     <% @movies.each do |movie| %>
       <div class="card col-xs-12 col-md-4 m-3" style="width: 18rem;">
